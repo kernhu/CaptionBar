@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.walkpast.dawnsample.MainActivity">
+
+    <TextView
+        android:id="@+id/caption_general"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="LeftBtn + Title"
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+    <TextView
+        android:id="@+id/caption_normal"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="LeftBtn + Title + RightBtn"
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+    <TextView
+        android:id="@+id/caption_design"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="Title + LeftBtn + RightBtn"
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+    <TextView
+        android:id="@+id/caption_search_single"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="SearchBox + RightBtn"
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+    <TextView
+        android:id="@+id/caption_search_multi"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="LeftBtn + SearchBox + RightBtn"
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+    <TextView
+        android:id="@+id/caption_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="LeftBtn + Tab + RightBtn "
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+    <TextView
+        android:id="@+id/caption_multi_tab"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="#FFF5F5F5"
+        android:gravity="center"
+        android:text="Multi Tab"
+        android:textColor="#FF4D4C4C"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFBABABA"/>
+
+</LinearLayout>

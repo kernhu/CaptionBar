@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_caption_bar_height">42dp</dimen>
+    <dimen name="default_caption_text_size">15sp</dimen>
+
+    <dimen name="design_caption_bar_height">48dp</dimen>
+
+
+    <dimen name="tab_indicator_height">3dp</dimen>
+
+</resources>

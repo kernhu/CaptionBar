@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DawnSample</string>
+
+
+    <string name="caption_left_btn">Left</string>
+    <string name="caption_right_btn">Right</string>
+    <string name="caption_middle_btn">Middle</string>
+
+    <string name="caption_search_left">深圳</string>
+    <string name="caption_search_positive_text">搜索</string>
+    <string name="caption_search_negative_text">取消</string>
+</resources>

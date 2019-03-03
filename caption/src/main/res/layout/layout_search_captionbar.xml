@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/caption_search_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/caption_search_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/caption_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@id/caption_search_right"
+        android:layout_toRightOf="@id/caption_search_left"
+        android:padding="2dp"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/caption_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/caption_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/caption_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/caption_search_clear"
+            android:layout_toRightOf="@id/caption_search_icon"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="2dp"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

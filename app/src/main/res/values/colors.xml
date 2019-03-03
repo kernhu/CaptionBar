@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="default_text_color">#FFFFFF</color>
+    <color name="default_statusbar_background">#FF40C2FF</color>
+    <color name="default_caption_background">#FF40C2FF</color>
+
+
+    <color name="design_statusbar_background">#FF0068D7</color>
+    <color name="design_caption_background">#FF0068D7</color>
+
+
+    <color name="tab_indicator_color">#FF9B9B9B</color>
+    <color name="tab_text_color">#FF9B9B9B</color>
+    <color name="tab_selected_text_color">#FFFFFF</color>
+
+</resources>

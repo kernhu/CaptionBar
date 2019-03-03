@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/caption_tab_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        tools:ignore="NewApi"/>
+
+    <TextView
+        android:id="@+id/caption_tab_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        tools:ignore="NewApi"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/caption_tab_right"
+        android:layout_toRightOf="@id/caption_tab_left">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/caption_tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </android.support.design.widget.TabLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
