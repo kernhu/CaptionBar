@@ -7,7 +7,7 @@ CaptionBar是一个 支持多种类型的ActionBar（TitleBar）的开源库，�
 ![](https://github.com/KernHu/CaptionBar/raw/master/screenshots/caption.gif)  
 
 
-####  I: How to use it.
+* ###  I: How to use it.
  1.创建一个Activity继承至CaptionActivity。（ eng： Create an Activity and extends CaptionActivity.）;
 
  2.在AndroidManifest中设置主题为 android:theme="@style/Theme.AppCompat.Light.NoActionBar" 。（ eng：set the Theme "android:theme="@style/Theme.AppCompat.Light.NoActionBar"" in the AndroidManifest）;
