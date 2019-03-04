@@ -284,7 +284,7 @@ CaptionBar是一个 支持多种类型的ActionBar（TitleBar）的开源库，�
 
 ```
 		dependencies {
-	        implementation 'com.github.KernHu:DawnSample:Tag'
+	        implementation 'com.github.KernHu:CaptionBar:1.0.0'
 	}
 
 ```
