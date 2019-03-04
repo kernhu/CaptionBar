@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DawnSample</string>
+    <string name="app_name">CaptionBar</string>
 
 
     <string name="caption_left_btn">Left</string>

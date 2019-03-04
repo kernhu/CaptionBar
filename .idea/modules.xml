@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CaptionBar.iml" filepath="$PROJECT_DIR$/CaptionBar.iml" />
+      <module fileurl="file://D:\BrowserProject\CaptionBar\CaptionBar.iml" filepath="D:\BrowserProject\CaptionBar\CaptionBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\BrowserProject\CaptionBar\app\app.iml" filepath="D:\BrowserProject\CaptionBar\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/caption/caption.iml" filepath="$PROJECT_DIR$/caption/caption.iml" />
+      <module fileurl="file://D:\BrowserProject\CaptionBar\caption\caption.iml" filepath="D:\BrowserProject\CaptionBar\caption\caption.iml" />
     </modules>
   </component>
 </project>

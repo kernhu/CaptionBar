@@ -50,7 +50,6 @@ public class MainActivity extends CaptionActivity implements View.OnClickListene
                 )
                 .build();
 
-
         ButterKnife.bind(this);
 
     }
