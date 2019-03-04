@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+def releaseTime() {
+    return new Date().format("yyyyMMddhhmmss", TimeZone.getTimeZone("UTC"))
+}
+
 android {
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
@@ -7,7 +11,7 @@ android {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -16,6 +20,67 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'captionbar'
+            keyPassword 'admin580'
+            storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
+            storePassword 'admin580'
+        }
+
+        release {
+            keyAlias 'captionbar'
+            keyPassword 'admin580'
+            storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
+            storePassword 'admin580'
+        }
+    }
+
+    flavorDimensions 'default'
+    productFlavors {
+        official { dimension "default" }
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "caption_v${variant.versionName}_${variant.flavorName}_${releaseTime()}.apk"
+                }
+            }
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "caption_v${variant.versionName}_${variant.buildType.name}_${variant.flavorName}_${releaseTime()}.apk"
+                }
+            }
+        }
+    }
+
 }
 
 dependencies {
@@ -29,7 +94,6 @@ dependencies {
 
     compile "com.android.support:design:$rootProject.supportLibraryVersion"
 
-    //注解
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 

@@ -8,9 +8,7 @@ android {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -20,24 +18,36 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
     compile "com.android.support:design:$rootProject.supportLibraryVersion"
+
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }
 
 publish {
+    repoName = 'Caption'
     userOrg = 'sky580'
-    groupId = 'cn.walkpast'
-    artifactId = 'dawn'
-    publishVersion = '1.0.0'
+    groupId = 'cn.walkpast.caption'
+    artifactId = 'CaptionBar'
+    publishVersion = '1.0.5'
     desc = 'captionbar'
-    website = 'https://github.com/KernHu/DawnSample'
+    website = 'https://github.com/KernHu/CaptionBar'
 }
+
+
+
