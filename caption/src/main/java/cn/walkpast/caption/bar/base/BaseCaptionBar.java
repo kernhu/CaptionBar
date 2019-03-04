@@ -8,7 +8,7 @@ import android.view.View;
  * Description: This is..
  */
 
-public class BaseCaptionBar implements ICaptionBar ,View.OnClickListener{
+public class BaseCaptionBar implements ICaptionBar, View.OnClickListener {
     @Override
     public View getView() {
         return null;
