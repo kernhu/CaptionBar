@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
-
 android {
 
     compileSdkVersion rootProject.compileSdkVersion
@@ -18,19 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    lintOptions{
+
+    lintOptions {
         abortOnError false
     }
-
-    repositories {
-        flatDir {
-            dirs 'libs', 'providedLibs'
-        }
-    }
-}
-
-task javadoc(type: Javadoc) {
-    options.encoding = "utf-8"
 }
 
 dependencies {
@@ -43,11 +33,20 @@ dependencies {
     compile "com.android.support:design:$rootProject.supportLibraryVersion"
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 publish {
+    repoName = 'Caption'
     userOrg = 'sky580'
     groupId = 'cn.walkpast.caption'
-    artifactId = 'captionbar'
+    artifactId = 'CaptionBar'
     publishVersion = '1.0.0'
     desc = 'captionbar'
     website = 'https://github.com/KernHu/CaptionBar'
 }
+
+
+
+
