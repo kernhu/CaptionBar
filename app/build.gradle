@@ -30,6 +30,7 @@ android {
             keyAlias 'captionbar'
             keyPassword 'admin580'
             storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
+            //storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
             storePassword 'admin580'
         }
 
@@ -37,6 +38,7 @@ android {
             keyAlias 'captionbar'
             keyPassword 'admin580'
             storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
+            //storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
             storePassword 'admin580'
         }
     }
