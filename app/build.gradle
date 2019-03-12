@@ -29,16 +29,16 @@ android {
         debug {
             keyAlias 'captionbar'
             keyPassword 'admin580'
-            //storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
-            storeFile file('Users/kern/AndroidStudioProjects/CaptionBar/app/keystore/keystore_release.jks')
+            storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
+            //storeFile file('Users/kern/AndroidStudioProjects/CaptionBar/app/keystore/keystore_release.jks')
             storePassword 'admin580'
         }
 
         release {
             keyAlias 'captionbar'
             keyPassword 'admin580'
-            storeFile file('Users/kern/AndroidStudioProjects/CaptionBar/app/keystore/keystore_release.jks')
-            //storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
+            //storeFile file('Users/kern/AndroidStudioProjects/CaptionBar/app/keystore/keystore_release.jks')
+            storeFile file('D:/BrowserProject/CaptionBar/app/keystore/keystore_release.jks')
             storePassword 'admin580'
         }
     }

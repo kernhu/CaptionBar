@@ -7,6 +7,7 @@
     <color name="default_text_color">#FFFFFF</color>
     <color name="default_statusbar_background">#FF40C2FF</color>
     <color name="default_caption_background">#FF40C2FF</color>
+    <color name="default_caption_background_dark">#FF1AB3FA</color>
 
 
     <color name="design_statusbar_background">#FF0068D7</color>

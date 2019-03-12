@@ -40,7 +40,7 @@ public class MainActivity extends CaptionActivity implements View.OnClickListene
                 .setOrientationPortrait(true)
                 .setStatusbarBgc(R.color.default_statusbar_background)
                 .setCaptionBarHeight(R.dimen.default_caption_bar_height)
-                .setCaptionBarBgc(R.color.default_caption_background)
+                .setCaptionBarColor(R.color.default_caption_background)
                 .setCaptionBar(new NormalCaptionBar()
                         .setContext(this)
                         .setTextColor(R.color.default_text_color)
@@ -59,33 +59,38 @@ public class MainActivity extends CaptionActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
 
+        mIntent = new Intent(this, SampleActivity.class);
+        String type = null;
+
         if (v.getId() == R.id.caption_general) {
 
-            mIntent = new Intent(this, GeneralCaptionActivity.class);
+            type = SampleActivity.LEFTBTN_TITLE;
 
         } else if (v.getId() == R.id.caption_normal) {
 
-            mIntent = new Intent(this, NormalCaptionActivity.class);
+            type = SampleActivity.LEFTBTN_TITLE_RIGHTBTN;
 
         } else if (v.getId() == R.id.caption_design) {
 
-            mIntent = new Intent(this, DesignCaptionActivity.class);
+            type = SampleActivity.TITLE_LEFTBTN_RIGHTBTN;
 
         } else if (v.getId() == R.id.caption_search_single) {
 
-            mIntent = new Intent(this, SearchSingleCaptionActivity.class);
+            type = SampleActivity.SEARCHBOX_RIGHTBTN;
 
-        }else if (v.getId() == R.id.caption_search_multi) {
+        } else if (v.getId() == R.id.caption_search_multi) {
 
-            mIntent = new Intent(this, SearchCaptionActivity.class);
+            type = SampleActivity.LEFTBTN_SEARCHBOX_RIGHTBTN;
 
         } else if (v.getId() == R.id.caption_tablayout) {
 
-            mIntent = new Intent(this, TabCaptionActivity.class);
+            type = SampleActivity.LEFTBTN_TABS_RIGHTBTN;
+
         } else if (v.getId() == R.id.caption_multi_tab) {
 
-            mIntent = new Intent(this, TabMultiCaptionActivity.class);
+            type = SampleActivity.MULTI_TABS;
         }
+        mIntent.putExtra(SampleActivity.TYPE, type);
         startActivity(mIntent);
     }
 }
