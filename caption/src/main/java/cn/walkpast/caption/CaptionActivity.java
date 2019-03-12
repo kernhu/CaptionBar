@@ -24,13 +24,17 @@ public class CaptionActivity extends AppCompatActivity {
         if (config.isOrientationPortrait()) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
+
+        //set the background color of status bar
+        setStatusBar(config.getStatusbarBgc());
+
+
         super.setContentView(R.layout.activity_caption);
         mFrameCaptionContainer = findViewById(R.id.frame_caption_container);
         mFrameNavigationContainer = findViewById(R.id.frame_navigation_container);
         mFrameContentContainer = findViewById(R.id.frame_content_container);
 
-        //set the background color of status bar
-        setStatusBar(config.getStatusbarBgc());
+
         //create action bar
         addCaptionBar(config);
         //
@@ -54,7 +58,7 @@ public class CaptionActivity extends AppCompatActivity {
             mFrameCaptionContainer.setVisibility(View.GONE);
         } else {
             mFrameCaptionContainer.setVisibility(View.VISIBLE);
-            mFrameCaptionContainer.setBackgroundColor(getResources().getColor(config.getCaptionBarBgc()));
+            mFrameCaptionContainer.setBackgroundColor(getResources().getColor(config.getCaptionBarColor()));
             ViewGroup.LayoutParams mContainerParams = mFrameCaptionContainer.getLayoutParams();
             mContainerParams.height = (int) getResources().getDimension(config.getCaptionBarHeight());
             mFrameCaptionContainer.addView(config.getCaptionBar());
@@ -90,6 +94,33 @@ public class CaptionActivity extends AppCompatActivity {
             localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
         }
 
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            // 透明状态栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//            // 透明导航栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+//            SystemStatusManager tintManager = new SystemStatusManager(this);
+//            tintManager.setStatusBarTintEnabled(true);
+//            tintManager.setStatusBarTintResource(0);
+//            // 设置状态栏的颜色
+//            tintManager.setStatusBarTintResource(color);
+//            getWindow().getDecorView().setFitsSystemWindows(true);
+//        }
+
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+//        {
+//            Window win = getWindow();
+//            WindowManager.LayoutParams winParams = win.getAttributes();
+//            final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+//            winParams.flags |= bits;
+//            win.setAttributes(winParams);
+//            getWindow().setStatusBarColor(getResources().getColor(color));
+//        }
+//        SystemStatusManager tintManager = new SystemStatusManager(this);
+//        tintManager.setStatusBarTintEnabled(true);
+//        tintManager.setStatusBarTintResource(0);
+
     }
 
 
@@ -103,7 +134,8 @@ public class CaptionActivity extends AppCompatActivity {
         /**
          *
          */
-        private boolean isOrientationPortrait;
+        private boolean isOrientationPortrait = true;
+
 
         /**
          * layoutResID
@@ -113,12 +145,23 @@ public class CaptionActivity extends AppCompatActivity {
         /**
          *
          */
-        private int mStatusBarBgc;
+        private int mStatusBarColor;
 
         /**
          *
          */
-        private int mCaptionBarBgc;
+        private int mCaptionBarColor;
+
+        /**
+         *
+         */
+        private int mStatusBarBackground;
+
+        /**
+         *
+         */
+        private int mCaptionBarBackground;
+
 
         /**
          *
@@ -151,21 +194,39 @@ public class CaptionActivity extends AppCompatActivity {
             return this;
         }
 
-        public int getStatusbarBgc() {
-            return mStatusBarBgc;
+        public int getStatusBarColor() {
+            return mStatusBarColor;
         }
 
-        public Config setStatusbarBgc(int statusbarBgc) {
-            mStatusBarBgc = statusbarBgc;
+        public Config setStatusBarColor(int statusBarColor) {
+            mStatusBarColor = statusBarColor;
             return this;
         }
 
-        public int getCaptionBarBgc() {
-            return mCaptionBarBgc;
+        public int getCaptionBarColor() {
+            return mCaptionBarColor;
         }
 
-        public Config setCaptionBarBgc(int captionBarBgc) {
-            mCaptionBarBgc = captionBarBgc;
+        public Config setCaptionBarColor(int captionBarColor) {
+            mCaptionBarColor = captionBarColor;
+            return this;
+        }
+
+        public int getStatusbarBgc() {
+            return mStatusBarBackground;
+        }
+
+        public Config setStatusbarBgc(int statusbarBackground) {
+            mStatusBarBackground = statusbarBackground;
+            return this;
+        }
+
+        public int getCaptionBarBackground() {
+            return mCaptionBarBackground;
+        }
+
+        public Config setCaptionBarBackground(int captionBarBgc) {
+            mCaptionBarBackground = captionBarBgc;
             return this;
         }
 

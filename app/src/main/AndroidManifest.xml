@@ -20,31 +20,9 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".GeneralCaptionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
 
         <activity
-            android:name=".NormalCaptionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-
-        <activity
-            android:name=".DesignCaptionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-
-        <activity
-            android:name=".SearchCaptionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity
-            android:name=".SearchSingleCaptionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-
-        <activity
-            android:name=".TabCaptionActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-
-        <activity
-            android:name=".TabMultiCaptionActivity"
+            android:name=".SampleActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
 
     </application>
