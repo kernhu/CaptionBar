@@ -10,18 +10,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"/>
 
-    <FrameLayout
-        android:id="@+id/frame_navigation_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:visibility="gone"/>
 
     <FrameLayout
         android:id="@+id/frame_content_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/frame_navigation_container"
         android:layout_below="@id/frame_caption_container"/>
 
 </RelativeLayout>

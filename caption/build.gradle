@@ -44,7 +44,7 @@ publish {
     userOrg = 'sky580'
     groupId = 'cn.walkpast.caption'
     artifactId = 'CaptionBar'
-    publishVersion = '1.0.5'
+    publishVersion = '1.0.7'
     desc = 'captionbar'
     website = 'https://github.com/KernHu/CaptionBar'
 }

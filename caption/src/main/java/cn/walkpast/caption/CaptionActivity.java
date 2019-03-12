@@ -13,7 +13,6 @@ import android.widget.FrameLayout;
 public class CaptionActivity extends AppCompatActivity {
 
     private FrameLayout mFrameCaptionContainer;
-    private FrameLayout mFrameNavigationContainer;
     private FrameLayout mFrameContentContainer;
 
     /**
@@ -31,7 +30,6 @@ public class CaptionActivity extends AppCompatActivity {
 
         super.setContentView(R.layout.activity_caption);
         mFrameCaptionContainer = findViewById(R.id.frame_caption_container);
-        mFrameNavigationContainer = findViewById(R.id.frame_navigation_container);
         mFrameContentContainer = findViewById(R.id.frame_content_container);
 
 
