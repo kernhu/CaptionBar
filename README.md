@@ -6,7 +6,7 @@ CaptionBar是一个 支持多种类型的ActionBar（TitleBar）的开源库，�
 
 ![](https://github.com/KernHu/CaptionBar/raw/master/screenshots/caption.gif)  
 
-Version [ ![Download](https://api.bintray.com/packages/sky580/Caption/CaptionBar/images/download.svg?version=1.0.7) ](https://bintray.com/sky580/Caption/CaptionBar/1.0.7/link)
+Version <a href="https://bintray.com/sky580/Caption/CaptionBar/1.0.7/link"><img src="https://api.bintray.com/packages/sky580/Caption/CaptionBar/images/download.svg?version=1.0.7"/></a>
 
 
 ### I: How to use it.
