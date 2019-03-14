@@ -1,4 +1,4 @@
-# CaptionBar <a href="https://bintray.com/sky580/Caption/CaptionBar/1.0.7/link"><img src="https://api.bintray.com/packages/sky580/Caption/CaptionBar/images/download.svg?version=1.0.7"/></a>
+# CaptionBar <a href="https://bintray.com/sky580/aerie/captionbar/1.0.2/link"><img src="https://api.bintray.com/packages/sky580/aerie/captionbar/images/download.svg?version=1.0.2"/></a>
 ActionBar/TitleBar
 
 CaptionBar是一个 支持多种类型的ActionBar（TitleBar）的开源库，它遵循面向对象设计思维，根据Android Activity继承原理设计，采用Build模式封装，并且统一ActionBar（TitleBar）的风格。它使用方便，很多属性可以自己设置（状态栏一体化、ActionBar高度、背景、字体大小、颜色、icon、事件监听等等），同时也支持自定义。避免了在项目开发中需要为每一个项目中每一个Activity定制一个ActionBar（TitleBar）的繁琐工作。同时，该项目还会继续维护，新增更多更丰富的ActionBar（TitleBar），欢迎大家提出bug和加入自定义ActionBar（TitleBar）队伍中。
@@ -55,7 +55,7 @@ CaptionBar是一个 支持多种类型的ActionBar（TitleBar）的开源库，�
 
 ```
 	dependencies {
-	       compile 'cn.walkpast.caption:CaptionBar:1.0.7'
+	     compile 'cn.walkpast.caption:captionbar:1.0.2'
 	}
 
 ```
