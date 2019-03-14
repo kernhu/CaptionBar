@@ -51,7 +51,7 @@ CaptionBar是一个 支持多种类型的ActionBar（TitleBar）的开源库，�
 	
 ### II: dependencie it to your project
 
-* Step 1. 在需要使用该库的build.gradle文件的dependencies添加依赖(cpoy the dependency in your build.gradle where you want use it);
+* Step 1. 在需要使用该库的build.gradle文件的dependencies添加依赖(eng:cpoy the dependency in your build.gradle where you want use it);
 
 ```
 	dependencies {
