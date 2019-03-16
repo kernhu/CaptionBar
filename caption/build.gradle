@@ -40,13 +40,13 @@ tasks.withType(JavaCompile) {
 }
 
 publish {
-    repoName = 'Caption'
+    repoName = 'aerie'
     userOrg = 'sky580'
     groupId = 'cn.walkpast.caption'
-    artifactId = 'CaptionBar'
-    publishVersion = '1.0.7'
+    artifactId = 'captionbar'
+    publishVersion = '1.0.2'
     desc = 'captionbar'
-    website = 'https://github.com/KernHu/CaptionBar'
+    website = 'https://github.com/KernHu'
 }
 
 
