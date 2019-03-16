@@ -71,9 +71,7 @@ QQ群：43447852
 Hello,I'm kern....
 如果有帮助到你，请给我一个小星星。If it helps you,please give me a star.
 <br><br>
-![](https://github.com/KernHu/CaptionBar/raw/master/QR-code/alipay_code.png)  
-![](https://github.com/KernHu/CaptionBar/raw/master/QR-code/alipay_invite_code.png)  
-![](https://github.com/KernHu/CaptionBar/raw/master/QR-code/wechat_code.png)  
+![](https://github.com/KernHu/CaptionBar/raw/master/QR-code/alipay_code.png)  ![](https://github.com/KernHu/CaptionBar/raw/master/QR-code/alipay_invite_code.png)  ![](https://github.com/KernHu/CaptionBar/raw/master/QR-code/wechat_code.png)  
 
 <br><br>
 ### Ⅳ：Apache License
