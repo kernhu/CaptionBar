@@ -64,7 +64,7 @@ allprojects {
 
 ```
 	dependencies {
-	       implementation 'com.github.KernHu:CaptionBar:Tag'
+	       implementation 'com.github.KernHu:CaptionBar:1.0.2'
 	}
 
 ```
