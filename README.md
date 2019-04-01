@@ -51,11 +51,20 @@ CaptionBar是一个 支持多种类型的ActionBar（TitleBar/ToolBar）的开�
 	
 ### II: dependencie it to your project
 
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
 * Step 1. 在需要使用该库的build.gradle文件的dependencies添加依赖(eng:cpoy the dependency in your build.gradle where you want use it);
 
 ```
 	dependencies {
-	     compile 'cn.walkpast.caption:captionbar:1.0.2'
+	       implementation 'com.github.KernHu:CaptionBar:Tag'
 	}
 
 ```
